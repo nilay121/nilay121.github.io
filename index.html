@@ -3,36 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Publications</title>
+    <title>Your Name | Researcher</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
+    <!-- Hero Section -->
     <header>
-        <h1>My Research & Publications</h1>
-        <p>Exploring Continual Learning & Robotics</p>
+        <div class="hero">
+            <div class="content">
+                <img src="profile.jpg" alt="Your Photo" class="profile-img">
+                <h1>Your Name</h1>
+                <h2>PhD Student | Continual Learning & Robotics</h2>
+                <p>Exploring lifelong learning for multimodal perception and adaptive robotics.</p>
+                <nav>
+                    <a href="#research">Research</a>
+                    <a href="#publications">Publications</a>
+                    <a href="mailto:your.email@example.com">Contact</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <section class="container">
-        <h2>Publications</h2>
-        <div class="publication">
-            <h3>Continual Learning for Modular Soft Robots</h3>
-            <p><strong>Author:</strong> Your Name, Co-authors</p>
-            <p><em>Conference/Journal Name, Year</em></p>
-            <p>A novel approach to continual learning in soft robotics, enabling adaptation and knowledge transfer between modular components.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="publication">
-            <h3>Progressive Neural Networks for Reinforcement Learning</h3>
-            <p><strong>Author:</strong> Your Name, Co-authors</p>
-            <p><em>Conference/Journal Name, Year</em></p>
-            <p>Exploring PNNs to handle task-specific representations while learning output masking dynamically.</p>
-            <a href="#" class="btn">Read More</a>
+    <!-- Research Interests Section -->
+    <section id="research">
+        <div class="container">
+            <h2>Research Interests</h2>
+            <div class="interests">
+                <div class="card">
+                    <h3>Continual Learning</h3>
+                    <p>Developing lifelong learning algorithms for robotics.</p>
+                </div>
+                <div class="card">
+                    <h3>Modular Soft Robots</h3>
+                    <p>Exploring adaptive architectures for flexible robot designs.</p>
+                </div>
+                <div class="card">
+                    <h3>Reinforcement Learning</h3>
+                    <p>Using PNNs to improve robot task performance.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <p><a href="publications.html" class="btn">View Publications →</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Your Name | <a href="mailto:your.email@example.com">Contact</a></p>
+        <p>© 2025 Your Name</p>
+        <div class="social">
+            <a href="#" class="icon">📄 CV</a>
+            <a href="#" class="icon">📚 Google Scholar</a>
+            <a href="#" class="icon">💼 LinkedIn</a>
+        </div>
     </footer>
+
 </body>
 </html>

@@ -8,50 +8,100 @@ body {
     text-align: center;
 }
 
-/* Header */
-header {
+/* Animated Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(135deg, #6e45e2, #88d3ce);
     color: white;
-    padding: 40px;
-    font-size: 1.2em;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: gradient 6s infinite alternate;
 }
 
-/* Container */
+@keyframes gradient {
+    0% { background: linear-gradient(135deg, #6e45e2, #88d3ce); }
+    100% { background: linear-gradient(135deg, #88d3ce, #6e45e2); }
+}
+
+/* Profile Image */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid white;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Sections */
 .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
 }
 
-/* Publications */
-.publication {
-    text-align: left;
+/* Fade-in effect */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Research Interests */
+.interests {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: #6e45e2;
+    color: white;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
-.publication:last-child {
-    border-bottom: none;
-}
-
-.publication h3 {
-    color: #6e45e2;
-}
-
-.publication p {
-    font-size: 0.95em;
-    color: #555;
+.card:hover {
+    transform: scale(1.05);
 }
 
 /* Button */
 .btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     background: #6e45e2;
     color: white;
     text-decoration: none;
@@ -70,4 +120,15 @@ footer {
     background: #222;
     color: white;
     font-size: 0.9em;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
