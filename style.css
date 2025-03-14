@@ -1,0 +1,70 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #004b6b;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Buttons */
+.nav-button {
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-button:hover {
+    background: #0096c7;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+/* Section Titles */
+h2 {
+    color: #0077b6;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* CV Download Link */
+a {
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005f86;
+}
