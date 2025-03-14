@@ -8,30 +8,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Body Background */
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(120deg, #f8f9fa, #eef2f3);
     color: #333;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: auto;
     text-align: center;
 }
 
+/* Header */
 header {
-    background: linear-gradient(135deg, #4A90E2, #007AFF);
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
     color: white;
     padding: 20px 0;
 }
 
 header h1 {
     font-size: 36px;
-}
-
-header h2 {
-    font-size: 20px;
-    font-weight: 300;
 }
 
 nav ul {
@@ -48,25 +46,31 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 
+/* Sections */
 section {
     padding: 50px 0;
 }
 
+/* Profile Image */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 3px solid #ff5f6d;
     margin-bottom: 20px;
 }
 
+/* Section Titles */
 h2 {
-    color: #007AFF;
-    font-size: 24px;
+    color: #ff5f6d;
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
+/* List Styling */
 ul {
     list-style: none;
     padding: 0;
@@ -77,14 +81,20 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Links */
 a {
-    color: #007AFF;
+    color: #ff5f6d;
     text-decoration: none;
     font-weight: bold;
 }
 
+a:hover {
+    color: #e63946;
+}
+
+/* Footer */
 footer {
-    background: #007AFF;
+    background: #ff5f6d;
     color: white;
     padding: 15px 0;
     margin-top: 30px;
