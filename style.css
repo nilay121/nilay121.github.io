@@ -48,8 +48,19 @@ body {
 
 /* Sections */
 section {
-    padding: 60px 20px;
+    padding: 20px 20px;
 }
+.skills-container {
+    width: 60%;  /* Adjust as needed */
+    margin: 0 auto; /* Centers the content */
+    text-align: center;
+}
+
+.skills-container p {
+    max-width: 1600px; /* Prevents overflow */
+    word-wrap: break-word;
+}
+
 
 /* Section Titles */
 h2 {
