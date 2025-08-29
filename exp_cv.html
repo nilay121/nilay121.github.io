@@ -1,48 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilay Kushawaha | CV</title>
+  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* Navbar */
+    header {
+      background: #0f172a;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .nav-button {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .nav-button:hover {
+      color: #38bdf8;
+    }
+
+    /* Section Container */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0f172a;
+      font-size: 1.6rem;
+      margin: 2rem 0 1.2rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.4rem;
+    }
+
+    /* CV Items */
+    .cv-item {
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.2rem;
+      border-left: 4px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cv-item:hover {
+      transform: translateX(6px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .cv-item b {
+      color: #0f172a;
+      font-size: 1rem;
+    }
+
+    .date {
+      display: block;
+      margin-top: 0.3rem;
+      font-style: italic;
+      color: #475569;
+      font-size: 0.9rem;
+    }
+
+    /* CV Download */
+    .download {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .download a {
+      display: inline-block;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .download a:hover {
+      background: #38bdf8;
+      color: #0f172a;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <a href="index.html" class="nav-button">About</a>
-            <a href="publication.html" class="nav-button">Publications</a>
-            <a href="#cv" class="nav-button">CV</a>
-			<a href="contact.html" class="nav-button">Contact</a>
-        </div>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="nav-button">About</a>
+      <a href="publication.html" class="nav-button">Publications</a>
+      <a href="#cv" class="nav-button">CV</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </header>
 
-    <section id="cv">
-	<br>
-		<h2>Education</h2>
-		1. <b>PhD in Biorobotics & AI </b>--> Sant’Anna School of Advanced Studies, Pisa, Italy <br>
-		<i>(October 2022 -present)</i> <br>
-		
-		2. <b>M.Sc in Physics (specializing in particle detector simulation)</b> --> Indian Institute of Technology Indore, India<br>
-		<i>(July 2020 – July 2022)</i><br>
-		
-		3. <b>B.Sc in Physics </b>--> University of Delhi <br> 
-		<i>(August 2017 – July 2020)</i> <br><br>
-		   
-		<h2>Experience</h2>
-		1. <b>Master’s project with Dr. Yulia Furletova, Dr Dimitry Romonav </b>--> (Jefferson Lab, United States) <br>
-		<i>(July 2020 – July 2022)</i><br>
+  <!-- CV Section -->
+  <section id="cv">
+    <h2>🎓 Education</h2>
 
-		2. <b>Data Science Intern </b>--> The Sparks Foundation <br>
-		<i>(May 2021 - June 2021)</i>
-		
-		<br><br>
-        <h2>Curriculum Vitae</h2>
-        <p>📄 Download my CV: <a href="https://github.com/nilay121/nilay121.github.io/blob/main/CV_Nilay.pdf" target="_blank">CV.pdf</a></p>
-    </section>
+    <div class="cv-item">
+      <b>Ph.D. in Biorobotics & AI</b> — Sant’Anna School of Advanced Studies, Pisa, Italy
+      <span class="date">(Oct 2022 – Present)</span>
+    </div>
 
+    <div class="cv-item">
+      <b>M.Sc in Physics (Particle Detector Simulation)</b> — Indian Institute of Technology Indore, India
+      <span class="date">(Jul 2020 – Jul 2022)</span>
+    </div>
+
+    <div class="cv-item">
+      <b>B.Sc in Physics</b> — University of Delhi, India
+      <span class="date">(Aug 2017 – Jul 2020)</span>
+    </div>
+
+    <h2>💼 Experience</h2>
+
+    <div class="cv-item">
+      <b>Master’s Project</b> with Dr. Yulia Furletova & Dr. Dimitry Romanov — Jefferson Lab, United States
+      <span class="date">(Jul 2020 – Jul 2022)</span>
+    </div>
+
+    <div class="cv-item">
+      <b>Data Science Intern</b> — The Sparks Foundation
+      <span class="date">(May 2021 – Jun 2021)</span>
+    </div>
+
+    <h2>📄 Curriculum Vitae</h2>
+    <div class="download">
+      <a href="https://github.com/nilay121/nilay121.github.io/blob/main/CV_Nilay.pdf" target="_blank">Download CV (PDF)</a>
+    </div>
+  </section>
 
 </body>
 </html>

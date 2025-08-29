@@ -1,48 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilay Kushawaha | AI & Robotics Researcher</title>
-    <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilay Kushawaha | AI & Robotics Researcher</title>
+  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* Navbar */
+    header {
+      background: #0f172a;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .nav-button {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .nav-button:hover {
+      color: #38bdf8;
+    }
+
+    /* Content */
+    .skills-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0f172a;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      color: #334155;
+      margin-top: 2rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.3rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    i {
+      color: #1e293b;
+    }
+
+    a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Publication styling */
+    .pub-item {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #f8fafc;
+      border-left: 4px solid #38bdf8;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .pub-item:hover {
+      transform: translateX(5px);
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <a href="index.html" class="nav-button">About</a>
-            <a href="#publications" class="nav-button">Publications</a>
-            <a href="exp_cv.html" class="nav-button">CV</a>
-			<a href="contact.html" class="nav-button">Contact</a>
-        </div>
-    </header>
-	<div class="skills-container">
-	<br>
-	<section id="publications">
-        <h2>Publications</h2>
-		<h3> 2025 </h3>
-		<p> 1. <i>"Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning" </i>, <b>N. Kushawaha</b>, R. Pathan,
-			N. Pagliarani, M. Cianchetti, E. Falotico, <b><i>IEEE Robosoft 2025 </i></b>(Accepted), 
-			<a href="https://www.arxiv.org/abs/2503.16540">Paper link</a>
-		<br><br>
-		<h3> 2024 </h3>
-		<p> 2. <i>"Continual Learning for Multimodal Data Fusion of a Soft Gripper" </i>, <b>N. Kushawaha</b>, E. Falotico (Under review in <b><i>IEEE Access</i></b>), <a href="https://arxiv.org/abs/2409.13792">Pre-print link</a>	
-		<br>
-		<p> 3. <i>"SynapNet: A Complementary Learning System Inspired Algorithm With Real-Time Application in Multimodal Perception" </i>, 
-		<b>N. Kushawaha</b>, L. Fruzzetti, E. Donato, E. Falotico, <b><i>IEEE Transactions on Neural Networks and Learning Systems</i></b>, 
-		<a href="https://ieeexplore.ieee.org/abstract/document/10649896">Paper link</a>	
-		<br><br>		
-		<h3> 2022 </h3>
-		<p> 4. <i>"Separation of electrons from pions in GEM TRD using deep learning" </i>, <b>N. Kushawaha</b>, Y Furletova, A Roy, D Romanov, 
-		<a href="https://arxiv.org/abs/2303.10776">Paper link</a>	
-		<br>
-		<p> 5. <i>"A study of Artificial Neural Network and its implementation from scratch" </i>, 
-		<b>N. Kushawaha</b>, A. Roy, <a href="https://www.researchsquare.com/article/rs-1588234/v1">Paper link</a>	
-    </section>
-	</div>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="nav-button">About</a>
+      <a href="#publications" class="nav-button">Publications</a>
+      <a href="exp_cv.html" class="nav-button">CV</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </header>
 
+  <div class="skills-container">
+    <section id="publications">
+      <h2>📚 Publications</h2>
+
+      <h3>2025</h3>
+      <div class="pub-item">
+        <p><i>"Continual Learning for Multimodal Data Fusion of a Soft Gripper"</i>, <b>N. Kushawaha</b>, E. Falotico; 
+        <b><i>Advanced Robotics Research, Wiley</i></b> — 
+        <a href="https://arxiv.org/abs/2409.13792">Paper link</a></p>
+      </div>
+
+      <div class="pub-item">
+        <p><i>"Domain Translation of a Soft Robotic Arm using Conditional Cycle Generative Adversarial Network"</i>, <b>N. Kushawaha</b>, C. Alessi, 
+        L. Fruzetti, E. Falotico; <b><i>IEEE International Conference on Robotics Systems and Application 2025</i></b> — 
+        <a href="https://arxiv.org/abs/2508.14100">Paper link</a></p>
+      </div>
+
+      <div class="pub-item">
+        <p><i>"Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning"</i>, <b>N. Kushawaha</b>, R. Pathan,
+        N. Pagliarani, M. Cianchetti, E. Falotico; <b><i>IEEE Robosoft 2025 (Accepted)</i></b> — 
+        <a href="https://www.arxiv.org/abs/2503.16540">Paper link</a></p>
+      </div>
+
+      <h3>2024</h3>
+      <div class="pub-item">
+        <p><i>"SynapNet: A Complementary Learning System Inspired Algorithm With Real-Time Application in Multimodal Perception"</i>, 
+        <b>N. Kushawaha</b>, L. Fruzzetti, E. Donato, E. Falotico; <b><i>IEEE Transactions on Neural Networks and Learning Systems</i></b> — 
+        <a href="https://ieeexplore.ieee.org/abstract/document/10649896">Paper link</a></p>
+      </div>
+
+      <h3>2022</h3>
+      <div class="pub-item">
+        <p><i>"Separation of electrons from pions in GEM TRD using deep learning"</i>, <b>N. Kushawaha</b>, Y Furletova, A Roy, D Romanov — 
+        <a href="https://arxiv.org/abs/2303.10776">Paper link</a></p>
+      </div>
+
+      <div class="pub-item">
+        <p><i>"A study of Artificial Neural Network and its implementation from scratch"</i>, <b>N. Kushawaha</b>, A. Roy — 
+        <a href="https://www.researchsquare.com/article/rs-1588234/v1">Paper link</a></p>
+      </div>
+
+    </section>
+  </div>
 
 </body>
 </html>

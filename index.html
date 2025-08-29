@@ -1,55 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilay Kushawaha | AI & Robotics Researcher</title>
-    <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilay Kushawaha | AI & Robotics Researcher</title>
+  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* Navbar */
+    header {
+      background: #0f172a;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .nav-button {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .nav-button:hover {
+      color: #38bdf8;
+    }
+
+    /* Profile Image */
+    .img {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    /* Section Containers */
+    .skills-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0f172a;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    b {
+      color: #0f172a;
+    }
+
+    /* Highlight skills & research tags */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+    }
+    .tag {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+    .tag:hover {
+      background: #bae6fd;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <a href="#about" class="nav-button">About</a>
-            <a href="publication.html" class="nav-button">Publications</a>
-            <a href="exp_cv.html" class="nav-button">CV</a>
-			<a href="contact.html" class="nav-button">Contact</a>
-        </div>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="#about" class="nav-button">About</a>
+      <a href="publication.html" class="nav-button">Publications</a>
+      <a href="exp_cv.html" class="nav-button">CV</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </header>
 
-    <!-- Sections -->
-	<br>
-	<div class="img">
-	<img src="website.jpg" alt="Nilay" class="profile-pic">
-	</div>
-	<div class="skills-container">
-	<section id="about">
-		<h2>About Me</h2>
-		
-		<p>Hi, I'm Nilay, a Ph.D. student at Scuola Superiore Sant’Anna, specializing in Continual Learning and Robotics. 
-		With a background in Physics, I have a deep passion for exploring new concepts and transforming knowledge into practical applications. 
-		This curiosity drove me to transition from hardcore physics to the dynamic fields of machine learning and robotics </p>
-	</section>
-	</div>
-	<div class="skills-container">
+  <!-- Profile Image -->
+    <div class="img">
+    <img src="https://raw.githubusercontent.com/nilay121/nilay121.github.io/main/website.jpg" alt="Nilay" class="profile-pic">
+    </div>
+
+
+  <!-- About Section -->
+  <div class="skills-container">
+    <section id="about">
+      <h2>👋 About Me</h2>
+      <p>Hi, I'm Nilay, a Ph.D. student at <b>Scuola Superiore Sant’Anna</b>, specializing in <b>Continual Learning</b> and <b>Robotics</b>. 
+      With a background in Physics, I have a deep passion for exploring new concepts and transforming knowledge into practical applications. 
+      This curiosity drove me to transition from hardcore physics to the dynamic fields of <b>Machine Learning</b> and <b>Robotics</b>.</p>
+    </section>
+  </div>
+
+  <!-- Research Section -->
+  <div class="skills-container">
     <section id="research">
-        <h2>Research Interests</h2>
-        <p>Continual Learning | Deep Learning | Reinforcement Learning | Generative AI | Multimodal perception | Robotics | Control </p>
+      <h2>🔬 Research Interests</h2>
+      <div class="tags">
+        <span class="tag">Continual Learning</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Multimodal Perception</span>
+        <span class="tag">Robotics</span>
+        <span class="tag">Control</span>
+      </div>
     </section>
-	</div>
-	
-	<div class="skills-container">
-    <section id="skills">
-        <h2>Skills</h2>
-        <p><b>Programming Languages </b>: Python, C++, Scilab, Fortran </p>
-		<p><b>Web Designing </b>: HTML/HTML5, CSS</p>
-		<p><b>Platforms & Misc. </b>: Google Colab, VSCode, Spyder, Heroku, Hypothesis testing, Scikit-learn, Tensorflow, Keras, 
-		Pytorch, Arduino, Ethical Hacking, Wireshark, SQL, SQL injection, ROS, LabView</p>
-    </section>
-	</div>
+  </div>
 
+  <!-- Skills Section -->
+  <div class="skills-container">
+    <section id="skills">
+      <h2>⚡ Skills</h2>
+      <p><b>Programming Languages</b>: Python, C++, Scilab, Fortran</p>
+      <p><b>Web Designing</b>: HTML/HTML5, CSS</p>
+      <p><b>Platforms & Tools</b>: Google Colab, VSCode, Spyder, Heroku, Hypothesis Testing, Scikit-learn, TensorFlow, Keras, 
+      PyTorch, Arduino, ROS, LabView</p>
+      <p><b>Miscellaneous</b>: Ethical Hacking, Wireshark, SQL, SQL Injection</p>
+    </section>
+  </div>
 
 </body>
 </html>
