@@ -1,0 +1,22 @@
+----------------------------- About ----------------------------- 
+We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we handle data in our app. 
+As a simple calorie tracking tool, we prioritize local storage and minimal data handling.
+
+-----------------------------  Information We Collect ----------------------------- 
+We do not collect, store, or transmit any personal data to our servers. All information you enter, such as your BMI details (age, height, weight, gender), 
+meal logs, exercise entries, and calorie goals, is saved locally on your device. No internet connection is required for core features, and we never access your camera, 
+location, or other device data beyond what's needed for food scanning.
+
+-----------------------------  How We Use Your Information ----------------------------- 
+Your data stays on your device to power app features like BMI calculations, meal tracking, and exercise recommendations based on MET values. We use it solely 
+to provide a personalized experience. No analytics, ads, or third-party sharing.
+
+-----------------------------  Sharing Your Information ----------------------------- 
+We do not share, sell, or disclose any data with third parties. Everything remains private on your phone. If you delete the app or clear storage, all data is erased.
+
+----------------------------- Children's Privacy ----------------------------- 
+Our app is not intended for children under 13. We do not knowingly collect data from minors.
+
+----------------------------- Contact Us ----------------------------- 
+Questions? Email us at : kushawaha.nilay.foreign@gmail.com. We're here to help!
+By using CalCal, you agree to this policy. Thanks for trusting us to keep it simple and private!
