@@ -86,12 +86,21 @@
       padding: 1rem;
       background: #f8fafc;
       border-left: 4px solid #38bdf8;
+      border-right: 4px solid #38bdf8;
       border-radius: 8px;
       transition: transform 0.2s;
     }
     .pub-item:hover {
       transform: translateX(5px);
     }
+      .pub-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      }
   </style>
 </head>
 <body>
@@ -115,18 +124,32 @@
         <p><i>"Continual Learning for Multimodal Data Fusion of a Soft Gripper"</i>, <b>N. Kushawaha</b>, E. Falotico; 
         <b><i>Advanced Robotics Research, Wiley</i></b> — 
         <a href="https://arxiv.org/abs/2409.13792">Paper link</a></p>
+        <img src="multimodal_paper.png" alt="stapler_signal">
+        <p>In this work, we developed a continual learning framework for multimodal semi-supervised learning, allowing new sensing modalities to be 
+          integrated incrementally without <i>retraining from scratch</i>. Demonstrated the effectiveness of our proposed approach on a 
+          soft pneumatic gripper equipped with force, bend, and vision sensors, synchronized through ROS framework.
+        </p>
       </div>
 
       <div class="pub-item">
         <p><i>"Domain Translation of a Soft Robotic Arm using Conditional Cycle Generative Adversarial Network"</i>, <b>N. Kushawaha</b>, C. Alessi, 
         L. Fruzetti, E. Falotico; <b><i>IEEE International Conference on Robotics Systems and Application 2025</i></b> — 
         <a href="https://arxiv.org/abs/2508.14100">Paper link</a></p>
+        <img src="ccgan_paper.gif" alt="cycle_gan_paper">
+        <p>In this work, we developed a control algorithm based on a conditional cycle generative adversarial network to <i>transfer 
+          a pose controller</i> from a standard simulation environment to a domain with tenfold higher viscosity. The approach was 
+          evaluated in simulation on the I-Support soft robotic arm for trajectory tracking tasks.
+        </p>
       </div>
 
       <div class="pub-item">
         <p><i>"Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning"</i>, <b>N. Kushawaha</b>, R. Pathan,
         N. Pagliarani, M. Cianchetti, E. Falotico; <b><i>IEEE Robosoft 2025 (Accepted)</i></b> — 
         <a href="https://www.arxiv.org/abs/2503.16540">Paper link</a></p>
+        <img src="sensor_drift_paper.png" alt="sensor_drift">
+        <p>In this work, we developed an adaptive continual learning algorithm to model the <i>drift present in a soft finger with piezoelectric based sensor </i> embedded
+          inside it for proprioception. The algorithm models together the inherent drift present in the sensor as well as the non-linearity of the soft 
+        structures in an online manner.</p>
       </div>
 
       <h3>2024</h3>
@@ -134,6 +157,12 @@
         <p><i>"SynapNet: A Complementary Learning System Inspired Algorithm With Real-Time Application in Multimodal Perception"</i>, 
         <b>N. Kushawaha</b>, L. Fruzzetti, E. Donato, E. Falotico; <b><i>IEEE Transactions on Neural Networks and Learning Systems</i></b> — 
         <a href="https://ieeexplore.ieee.org/abstract/document/10649896">Paper link</a></p>
+        <img src="synapnet_paper_new.gif" alt="synapnet_algorithm">
+        <p>In this work, we developed an algorithm inspired by CLS theory, combining a <i>fast learner</i> with a <i>slow consolidator</i>, 
+          enhanced by a VAE-based pseudo-episodic memory. The approach integrates <i>lateral inhibition</i> to suppress redundant neuronal 
+          activity and employs a <i>sleep phase</i> to reorganize learned representations. We demonstrated its effectiveness in real-time 
+          object classification using proprioceptive signals from a soft sensorized gripper operating in a <i>dynamic environment</i> with 
+          an unknown number of classes.</p>
       </div>
 
       <h3>2022</h3>
