@@ -1,128 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilay Kushawaha | Contact</title>
-  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Get in touch with Nilay Kushawaha — AI &amp; Robotics Researcher at NYU Abu Dhabi.">
+  <meta name="theme-color" content="#070b14">
 
-  <style>
-    body {
-      background-color: #f9f9fb;
-      color: #222;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-    }
-
-    /* Navbar */
-    .navbar {
-      background-color: #0f172a;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .navbar a {
-      color: #f1f5f9;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-      transition: 0.3s;
-    }
-
-    .navbar a:hover,
-    .navbar a.active {
-      color: #38bdf8;
-    }
-
-    /* Content box */
-    .content-container {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 30px;
-      background-color: #1e1e1e;
-      color: #f1f1f1;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Social icons */
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      margin: 0 15px;
-      color: #f1f1f1;
-      font-size: 28px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #38bdf8;
-      transform: scale(1.1);
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 80px;
-      font-size: 14px;
-      color: #888;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // apply the stored theme before first paint, and flag that JS is live
+    document.documentElement.classList.add('js');
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="navbar">
-      <a href="index.html" class="nav-button">About</a>
-      <a href="publication.html" class="nav-button">Publications</a>
-      <a href="exp_cv.html" class="nav-button">CV</a>
-      <a href="contact.html" class="nav-button active">Contact</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span>Nilay Kushawaha</a>
+      <nav class="navbar">
+        <a href="index.html" class="nav-button">About</a>
+        <a href="publication.html" class="nav-button">Publications</a>
+        <a href="exp_cv.html" class="nav-button">CV</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode">☀️</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
     </div>
   </header>
 
-  <!-- Contact Section -->
-  <div class="content-container">
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:nilay.kushawaha@santannapisa.it">nilay.kushawaha@santannapisa.it</a></p>
-      <p>Alternate Email: <a href="mailto:nilay.kushawaha112@gmail.com">nilay.kushawaha112@gmail.com</a></p>
-      <br>
-      <!-- Social Media Icons -->
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/nilaykush/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/nilay121?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
-        <a href="https://www.youtube.com/@nilaykushawaha3028" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  <main>
+
+    <section class="wrap" style="margin-top:3.4rem">
+      <span class="eyebrow">Say Hello</span>
+      <h1 style="font-size:clamp(1.9rem,4.6vw,2.5rem);margin:0 0 0.4rem">Get in <span class="gradient-text">Touch</span></h1>
+      <p style="margin:0">Happy to talk about continual learning, soft robotics, collaborations, or a good research problem.</p>
+    </section>
+
+    <section id="contact" class="card reveal">
+      <h2 class="section-title"><span class="ico">📬</span> Contact</h2>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:nilay.kushawaha@santannapisa.it">
+          <span class="ci"><i class="fa-solid fa-envelope"></i></span>
+          <span>
+            <span class="cl">Academic email</span>
+            <span class="cv-val">nilay.kushawaha@santannapisa.it</span>
+          </span>
+        </a>
+
+        <a class="contact-card" href="mailto:nilay.kushawaha112@gmail.com">
+          <span class="ci"><i class="fa-solid fa-paper-plane"></i></span>
+          <span>
+            <span class="cl">Personal email</span>
+            <span class="cv-val">nilay.kushawaha112@gmail.com</span>
+          </span>
+        </a>
+
+        <div class="contact-card">
+          <span class="ci"><i class="fa-solid fa-location-dot"></i></span>
+          <span>
+            <span class="cl">Based in</span>
+            <span class="cv-val">Abu Dhabi, United Arab Emirates</span>
+          </span>
+        </div>
+
+        <a class="contact-card" href="CV_Nilay.pdf" target="_blank" rel="noopener">
+          <span class="ci"><i class="fa-solid fa-file-lines"></i></span>
+          <span>
+            <span class="cl">Curriculum Vitae</span>
+            <span class="cv-val">Download the PDF ↗</span>
+          </span>
+        </a>
       </div>
     </section>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 Nilay Kushawaha | AI & Robotics Researcher
+    <section class="card reveal" style="text-align:center">
+      <h2 class="section-title" style="justify-content:center"><span class="ico">🌐</span> Elsewhere</h2>
+      <div class="social-icons" style="justify-content:center;margin-top:0.6rem">
+        <a href="https://www.linkedin.com/in/nilaykush/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/nilay121?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="https://www.youtube.com/@nilaykushawaha3028" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.calcal.fit" target="_blank" rel="noopener" aria-label="CalCal" title="CalCal"><i class="fa-solid fa-utensils"></i></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Nilay Kushawaha — AI &amp; Robotics Researcher</span>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/nilaykush/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/nilay121?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="https://www.youtube.com/@nilaykushawaha3028" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
   </footer>
 
+  <button id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js" defer></script>
 </body>
 </html>

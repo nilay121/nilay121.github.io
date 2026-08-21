@@ -1,189 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilay Kushawaha | CV</title>
-  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f9f9fb;
-      color: #222;
-      line-height: 1.7;
-    }
+  <meta name="description" content="Experience and education — Postdoctoral Associate at NYU Abu Dhabi, Ph.D. in Biorobotics &amp; AI.">
+  <meta name="theme-color" content="#070b14">
 
-    /* Navbar */
-    header {
-      background: #0f172a;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .nav-button {
-      color: #f1f5f9;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s;
-    }
-    .nav-button:hover {
-      color: #38bdf8;
-    }
-
-    /* Section Container */
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      text-align: center;
-      color: #0f172a;
-      font-size: 1.6rem;
-      margin: 2rem 0 1.2rem;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.4rem;
-    }
-
-    /* CV Items */
-    .cv-item {
-      margin-bottom: 1.5rem;
-      padding: 1rem 1.2rem;
-      border-left: 4px solid #38bdf8;
-      background: #f8fafc;
-      border-radius: 8px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .cv-item:hover {
-      transform: translateX(6px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .cv-item b {
-      color: #0f172a;
-      font-size: 1rem;
-    }
-
-    .date {
-      display: block;
-      margin-top: 0.3rem;
-      font-style: italic;
-      color: #475569;
-      font-size: 0.9rem;
-    }
-
-    /* CV Download */
-    .download {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .download a {
-      display: inline-block;
-      background: #0f172a;
-      color: #f8fafc;
-      padding: 0.7rem 1.5rem;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .download a:hover {
-      background: #38bdf8;
-      color: #0f172a;
-      transform: scale(1.05);
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // apply the stored theme before first paint, and flag that JS is live
+    document.documentElement.classList.add('js');
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="navbar">
-      <a href="index.html" class="nav-button">About</a>
-      <a href="publication.html" class="nav-button">Publications</a>
-      <a href="#cv" class="nav-button">CV</a>
-      <a href="contact.html" class="nav-button">Contact</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span>Nilay Kushawaha</a>
+      <nav class="navbar">
+        <a href="index.html" class="nav-button">About</a>
+        <a href="publication.html" class="nav-button">Publications</a>
+        <a href="exp_cv.html" class="nav-button">CV</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode">☀️</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
     </div>
   </header>
 
-  <!-- CV Section -->
-  <section id="cv">
+  <main>
 
-    <h2>💼 Experience</h2>
+    <section class="wrap" style="margin-top:3rem">
+      <span class="eyebrow">Curriculum Vitae</span>
+      <h1 style="font-size:clamp(1.9rem,4.6vw,2.5rem);margin:0 0 0.4rem">Experience &amp; <span class="gradient-text">Education</span></h1>
+      <p style="margin:0">A short trail through robotics labs, particle detectors, and everything in between.</p>
+      <p style="margin-top:1.1rem">
+        <a href="CV_Nilay.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download full CV (PDF)</a>
+      </p>
+    </section>
 
-    <div class="cv-item">
-      <b>Visiting Researcher</b> — <a href = "https://www.softroboticslab.info/prof-cecilia-laschi" >Prof. Cecilia Laschi</a> — National University of Singapore (NUS), Singapore
-      <span class="date">(June 2025 – September 2025)</span>
-      <ul>
-        <li> Developed dynamic continual learning algorithms for modular soft robot control to enable localized preicse control.
-        <li> Tested the controller in real-time for trajectory tracking and dynamic reaching tasks, achieving an error less 
-          than 6 mm in position and 3 degree in orientation.
-      </ul>
+    <!-- Experience -->
+    <section id="cv" class="card reveal">
+      <h2 class="section-title"><span class="ico">💼</span> Experience</h2>
+
+      <div class="timeline">
+
+        <div class="cv-item current">
+          <p class="title">Postdoctoral Associate <span class="badge-now">Current</span></p>
+          <p class="org">New York University Abu Dhabi (NYUAD) — Abu Dhabi, United Arab Emirates</p>
+          <span class="date">June 2026 – Present</span>
+          <ul>
+            <li>Research on continual learning, multimodal perception, and model-free control for robotic systems.</li>
+            <li>Building algorithms that let robots keep adapting to new tasks and environments after deployment,
+              without retraining from scratch.</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <p class="title">Visiting Researcher</p>
+          <p class="org">National University of Singapore (NUS) — Singapore ·
+            with <a href="https://www.softroboticslab.info/prof-cecilia-laschi" target="_blank" rel="noopener">Prof. Cecilia Laschi</a></p>
+          <span class="date">June 2025 – September 2025</span>
+          <ul>
+            <li>Developed dynamic continual learning algorithms for modular soft robot control to enable localized, precise control.</li>
+            <li>Tested the controller in real time for trajectory tracking and dynamic reaching tasks, achieving errors below
+              6&nbsp;mm in position and 3° in orientation.</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <p class="title">Master's Thesis Project</p>
+          <p class="org">Jefferson Lab — United States ·
+            with <a href="https://www.jlab.org/people/Yulia_Furletova_Nuclear_Physicist" target="_blank" rel="noopener">Dr. Yulia Furletova</a>
+            &amp; <a href="https://physics.iiti.ac.in/dr-ankhi-roy/" target="_blank" rel="noopener">Prof. Ankhi Roy</a></p>
+          <span class="date">July 2021 – July 2022</span>
+          <ul>
+            <li>Simulated and modeled the Gas Electron Multiplier (GEM) detector for the Electron-Ion Collider 2 project.</li>
+            <li>Applied AI algorithms to extract sensitive particle signals from a high-noise environment, improving detection accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <p class="title">Side Project — CalCal</p>
+          <p class="org">Calorie tracking app · <a href="https://www.calcal.fit" target="_blank" rel="noopener">calcal.fit</a></p>
+          <ul>
+            <li>Developed a mobile application that estimates calorie content from food images, barcode scans, or manual input.</li>
+            <li>Implemented features to log and monitor calories burned through selected physical activities.</li>
+            <li>Designed an intuitive dashboard summarizing daily and weekly calorie intake and expenditure.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card reveal">
+      <h2 class="section-title"><span class="ico">🎓</span> Education</h2>
+
+      <div class="timeline">
+
+        <div class="cv-item">
+          <p class="title">Ph.D. in Biorobotics &amp; AI</p>
+          <p class="org">Scuola Superiore Sant'Anna, Pisa, Italy</p>
+          <span class="date">October 2022 – 2026</span>
+        </div>
+
+        <div class="cv-item">
+          <p class="title">M.Sc. in Physics <span style="font-weight:400;color:var(--text-dim)">(Particle Detector Simulation)</span></p>
+          <p class="org">Indian Institute of Technology Indore, India</p>
+          <span class="date">July 2020 – July 2022</span>
+        </div>
+
+        <div class="cv-item">
+          <p class="title">B.Sc. in Physics</p>
+          <p class="org">University of Delhi, India</p>
+          <span class="date">August 2017 – July 2020</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CV download -->
+    <section class="card reveal" style="text-align:center">
+      <h2 class="section-title" style="justify-content:center"><span class="ico">📄</span> Curriculum Vitae</h2>
+      <p>The full version, with publications, talks, and references.</p>
+      <p style="margin-top:1.1rem">
+        <a href="CV_Nilay.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Nilay Kushawaha — AI &amp; Robotics Researcher</span>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/nilaykush/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/nilay121?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="https://www.youtube.com/@nilaykushawaha3028" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
     </div>
+  </footer>
 
-    <div class="cv-item">
-      <b>Master’s Thesis Project</b> — <a href="https://www.jlab.org/people/Yulia_Furletova_Nuclear_Physicist">Dr. Yulia Furletova </a> & <a href="https://physics.iiti.ac.in/dr-ankhi-roy/"> Prof. Ankhi Roy </a> — Jefferson Lab, United States of America
-      <span class="date">(Jul 2021 – Jul 2022)</span>
-      <ul>
-        <li> Simulated and modeled the Gas Electron Multiplier (GEM) detector for Electron-Ion Collider 2 project.
-        <li> Applied AI algorithm for extracting sensitive particle signals from high-noise environment, improving detection accuracy.
-      </ul>
-    </div>
-
-    <div class="cv-item">
-      <b>Side Project</b> — <a href="https://calcal.ddns.net/"> CalCal </a> (Calorie Tracking App)
-        <li> Developed a mobile application that estimates calorie content from food images, barcode scans, or manual inputs.
-        <li>Implemented features to log and monitor calories burned through selected physical activities.
-        <li>Designed an intuitive dashboard summarizing daily and weekly calorie intake and expenditure.</li>
-      </ul>
-    </div>
-    
-<!-- 
-    <div class="cv-item">
-      <b>Data Science Intern</b> — The Sparks Foundation
-      <span class="date">(May 2021 – Jun 2021)</span>
-      <ul>
-        <li> Designed an interactive dashboard using PowerBI for Covid Analysis.
-        <li> Built an LSTM model on the stocks data to predict the future price based on earlier closing prices.
-      </ul>
-    </div> -->
-
-
-
-    <h2>🎓 Education</h2>
-
-    <div class="cv-item">
-      <b>Ph.D. in Biorobotics & AI</b> — Sant’Anna School of Advanced Studies, Pisa, Italy
-      <span class="date">(Oct 2022 – Present)</span>
-    </div>
-
-    <div class="cv-item">
-      <b>M.Sc in Physics (Particle Detector Simulation)</b> — Indian Institute of Technology Indore, India
-      <span class="date">(Jul 2020 – Jul 2022)</span>
-    </div>
-
-    <div class="cv-item">
-      <b>B.Sc in Physics</b> — University of Delhi, India
-      <span class="date">(Aug 2017 – Jul 2020)</span>
-    </div>
-
-    <h2>📄 Curriculum Vitae</h2>
-    <div class="download">
-      <a href="https://github.com/nilay121/nilay121.github.io/blob/main/CV_Nilay.pdf" target="_blank">Download CV (PDF)</a>
-    </div>
-  </section>
-
+  <button id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js" defer></script>
 </body>
 </html>

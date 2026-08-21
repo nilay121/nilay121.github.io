@@ -1,173 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nilay Kushawaha | AI & Robotics Researcher</title>
-  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f9f9fb;
-      color: #222;
-      line-height: 1.7;
-    }
+  <title>Nilay Kushawaha | AI &amp; Robotics Researcher</title>
+  <meta name="description" content="Postdoctoral Associate at NYU Abu Dhabi. Continual learning, brain-inspired AI, and adaptive robot control.">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:title" content="Nilay Kushawaha | AI &amp; Robotics Researcher">
+  <meta property="og:description" content="Postdoctoral Associate at NYU Abu Dhabi. Continual learning, brain-inspired AI, and adaptive robot control.">
+  <meta property="og:image" content="website.jpg">
+  <meta property="og:type" content="website">
 
-    /* Navbar */
-    header {
-      background: #0f172a;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .nav-button {
-      color: #f1f5f9;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s;
-    }
-    .nav-button:hover {
-      color: #38bdf8;
-    }
-
-    /* Profile Image */
-    .img {
-      display: flex;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .profile-pic:hover {
-      transform: scale(1.05);
-    }
-
-    /* Section Containers */
-    .skills-container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem 2rem;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      text-align: center;
-      color: #0f172a;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      margin: 0.5rem 0;
-    }
-
-    b {
-      color: #0f172a;
-    }
-
-    /* Highlight skills & research tags */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 0.8rem;
-    }
-    .tag {
-      background: #e0f2fe;
-      color: #0369a1;
-      font-weight: 500;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      transition: 0.2s;
-    }
-    .tag:hover {
-      background: #bae6fd;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // apply the stored theme before first paint, and flag that JS is live
+    document.documentElement.classList.add('js');
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="navbar">
-      <a href="#about" class="nav-button">About</a>
-      <a href="publication.html" class="nav-button">Publications</a>
-      <a href="exp_cv.html" class="nav-button">CV</a>
-      <a href="contact.html" class="nav-button">Contact</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span>Nilay Kushawaha</a>
+      <nav class="navbar">
+        <a href="index.html" class="nav-button">About</a>
+        <a href="publication.html" class="nav-button">Publications</a>
+        <a href="exp_cv.html" class="nav-button">CV</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode">☀️</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
     </div>
   </header>
 
-  <!-- Profile Image -->
-    <div class="img">
-    <img src="https://raw.githubusercontent.com/nilay121/nilay121.github.io/main/website.jpg" alt="Nilay" class="profile-pic">
-    </div>
+  <main>
 
-
-  <!-- About Section -->
-  <div class="skills-container">
-    <section id="about">
-      <h2>👋 About Me</h2>
-      <p>Hi, I'm Nilay, I am a Postdoctoral Associate at NYU Abu Dhabi with a Ph.D. in <b>Biorobotics</b> and <b>AI</b> from the Scuola Superiore Sant’Anna, Italy. 
-		  My research focuses on <b>continual learning</b>, <b>brain-inspired AI</b>, and <b>adaptive robot control</b>. I develop algorithms that enable robots to learn and adapt throughout 
-		  their lifetime, similar to humans. My work spans both <b>soft</b> and <b>rigid robotic </b> systems, combining machine learning, robotics, and physics to build 
-		  more intelligent and autonomous robots.</p>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="avatar-ring">
+        <img src="website.jpg" alt="Portrait of Nilay Kushawaha" class="profile-pic" width="180" height="180">
+      </div>
+      <div>
+        <span class="eyebrow">AI &amp; Robotics Researcher</span>
+        <h1>Hi, I'm <span class="gradient-text">Nilay Kushawaha</span></h1>
+        <p class="role"><b>Postdoctoral Associate</b> at <b>NYU Abu Dhabi</b></p>
+        <p class="where">Ph.D. in Biorobotics &amp; AI — Scuola Superiore Sant'Anna, Pisa 🇮🇹 &nbsp;·&nbsp; Abu Dhabi 🇦🇪</p>
+        <div class="hero-actions">
+          <a href="publication.html" class="btn btn-primary">Read my research</a>
+          <a href="CV_Nilay.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download CV</a>
+          <div class="social-icons">
+            <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="https://github.com/nilay121?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nilaykush/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:nilay.kushawaha112@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
-  </div>
 
-  <!-- Research Section -->
-  <div class="skills-container">
-    <section id="research">
-      <h2>🔬 Research Interests</h2>
+    <!-- About -->
+    <section id="about" class="card reveal">
+      <h2 class="section-title"><span class="ico">👋</span> About Me</h2>
+      <p>Hi, I'm Nilay. I'm a <b>Postdoctoral Associate at NYU Abu Dhabi</b>, with a Ph.D. in <b>Biorobotics</b> and <b>AI</b>
+        from the Scuola Superiore Sant'Anna, Italy.</p>
+      <p>My research focuses on <b>continual learning</b>, <b>brain-inspired AI</b>, and <b>adaptive robot control</b>.
+        I develop algorithms that let robots keep learning and adapting across their lifetime, the way humans do. My work
+        spans both <b>soft</b> and <b>rigid robotic</b> systems, combining machine learning, robotics, and physics to build
+        more intelligent and autonomous robots.</p>
+
+      <div class="stats" style="margin-top:1.3rem">
+        <div class="stat"><span class="num">6</span><span class="lbl">Publications</span></div>
+        <div class="stat"><span class="num">NYUAD</span><span class="lbl">Current affiliation</span></div>
+        <div class="stat"><span class="num">Ph.D.</span><span class="lbl">Biorobotics &amp; AI</span></div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="card reveal">
+      <h2 class="section-title"><span class="ico">🔬</span> Research Interests</h2>
+      <p>The threads that run through most of my work:</p>
       <div class="tags">
         <span class="tag">Continual Learning</span>
         <span class="tag">Deep Learning</span>
         <span class="tag">Reinforcement Learning</span>
         <span class="tag">Generative AI</span>
-		<span class="tag">Computer Vision</span>
+        <span class="tag">Computer Vision</span>
         <span class="tag">Multimodal Perception</span>
         <span class="tag">Robotics</span>
-        <span class="tag">Control</span>
+        <span class="tag">Model-free Control</span>
       </div>
     </section>
-  </div>
 
-  <!-- Skills Section -->
-  <div class="skills-container">
-    <section id="skills">
-      <h2>⚡ Skills</h2>
-      <p><b>Programming Languages</b>: Python, C++, Scilab, Fortran</p>
-      <p><b>Web Designing</b>: HTML/HTML5, CSS</p>
-      <p><b>Platforms & Tools</b>: Google Colab, VSCode, Spyder, Heroku, Hypothesis Testing, Scikit-learn, TensorFlow, Keras, 
-      PyTorch, Arduino, ROS, LabView</p>
-      <p><b>Miscellaneous</b>: Ethical Hacking, Wireshark, SQL, SQL Injection</p>
+    <!-- Skills -->
+    <section id="skills" class="card reveal">
+      <h2 class="section-title"><span class="ico">⚡</span> Skills</h2>
+
+      <div class="skill-row">
+        <span class="label">Languages</span>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">C++</span><span class="chip">Scilab</span><span class="chip">Fortran</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="label">ML &amp; Frameworks</span>
+        <div class="chips">
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span>
+          <span class="chip">Scikit-learn</span><span class="chip">Hypothesis Testing</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="label">Robotics &amp; Hardware</span>
+        <div class="chips">
+          <span class="chip">ROS</span><span class="chip">Arduino</span><span class="chip">LabVIEW</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="label">Platforms &amp; Tools</span>
+        <div class="chips">
+          <span class="chip">VS Code</span><span class="chip">Google Colab</span><span class="chip">Spyder</span><span class="chip">Heroku</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="label">Web</span>
+        <div class="chips">
+          <span class="chip">HTML5</span><span class="chip">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="label">Miscellaneous</span>
+        <div class="chips">
+          <span class="chip">Ethical Hacking</span><span class="chip">Wireshark</span><span class="chip">SQL</span><span class="chip">SQL Injection</span>
+        </div>
+      </div>
     </section>
-  </div>
 
-  <!-- Side Project Section -->
-  <div class="skills-container">
-    <section id="side-project">
-      <h2>✨ Side Project</h2>
-      <p>In my free time I work on <b>CalCal</b> : an AI-based calorie estimator that predicts calories from food images and helps users track nutrition quickly. Check it out: <a href="https://www.calcal.fit" target="_blank" rel="noopener noreferrer">CalCal 🔗</a></p>
+    <!-- Side project -->
+    <section id="side-project" class="card reveal">
+      <h2 class="section-title"><span class="ico">✨</span> Side Project</h2>
+      <p>In my free time I build <b>CalCal</b> — an AI-based calorie estimator that predicts calories from food images
+        and helps users track nutrition quickly.</p>
+      <p style="margin-top:1rem">
+        <a href="https://www.calcal.fit" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Visit CalCal ↗</a>
+      </p>
     </section>
-  </div>
 
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Nilay Kushawaha — AI &amp; Robotics Researcher</span>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/nilaykush/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/nilay121?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="https://www.youtube.com/@nilaykushawaha3028" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js" defer></script>
 </body>
 </html>

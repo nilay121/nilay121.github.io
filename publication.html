@@ -1,185 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nilay Kushawaha | AI & Robotics Researcher</title>
-  <meta name="description" content="Ph.D. Student | Continual Learning | Robotics | AI">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f9f9fb;
-      color: #222;
-      line-height: 1.7;
-    }
+  <title>Nilay Kushawaha | Publications</title>
+  <meta name="description" content="Peer-reviewed publications on continual learning, multimodal perception, and soft robot control.">
+  <meta name="theme-color" content="#070b14">
 
-    /* Navbar */
-    header {
-      background: #0f172a;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .nav-button {
-      color: #f1f5f9;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s;
-    }
-    .nav-button:hover {
-      color: #38bdf8;
-    }
-
-    /* Content */
-    .skills-container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      text-align: center;
-      color: #0f172a;
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-
-    h3 {
-      color: #334155;
-      margin-top: 2rem;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.3rem;
-      font-size: 1.2rem;
-    }
-
-    p {
-      margin: 0.5rem 0;
-    }
-
-    i {
-      color: #1e293b;
-    }
-
-    a {
-      color: #0284c7;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Publication styling */
-    .pub-item {
-      margin: 1rem 0;
-      padding: 1rem;
-      background: #f8fafc;
-      border-left: 4px solid #38bdf8;
-      border-right: 4px solid #38bdf8;
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-    .pub-item:hover {
-      transform: translateX(5px);
-    }
-      .pub-item img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem auto 0 auto;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // apply the stored theme before first paint, and flag that JS is live
+    document.documentElement.classList.add('js');
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="navbar">
-      <a href="index.html" class="nav-button">About</a>
-      <a href="#publications" class="nav-button">Publications</a>
-      <a href="exp_cv.html" class="nav-button">CV</a>
-      <a href="contact.html" class="nav-button">Contact</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span>Nilay Kushawaha</a>
+      <nav class="navbar">
+        <a href="index.html" class="nav-button">About</a>
+        <a href="publication.html" class="nav-button">Publications</a>
+        <a href="exp_cv.html" class="nav-button">CV</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode">☀️</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
     </div>
   </header>
 
-  <div class="skills-container">
-    <section id="publications">
-      <h2>📚 Publications</h2>
+  <main>
 
-      <h3>2025</h3>
-      <div class="pub-item">
-        <p><i>"Continual Learning for Multimodal Data Fusion of a Soft Gripper"</i>, <b>N. Kushawaha</b>, E. Falotico; 
-        <b><i>Advanced Robotics Research, Wiley</i></b> — 
-        <a href="https://arxiv.org/abs/2409.13792">Paper link</a></p>
-        <img src="https://raw.githubusercontent.com/nilay121/nilay121.github.io/main/multimodal_paper.png" alt="stapler_signal">
-        <p>In this work, we developed a continual learning framework for multimodal semi-supervised learning, allowing new sensing modalities to be 
-          integrated incrementally without <i>retraining from scratch</i>. Demonstrated the effectiveness of our proposed approach on a 
-          soft pneumatic gripper equipped with force, bend, and vision sensors, synchronized through ROS framework.
-        </p>
-      </div>
+    <section class="wrap" style="margin-top:3rem">
+      <span class="eyebrow">Selected Work</span>
+      <h1 style="font-size:clamp(1.9rem,4.6vw,2.5rem);margin:0 0 0.4rem">📚 <span class="gradient-text">Publications</span></h1>
+      <p style="margin:0">Continual learning, multimodal perception, and control — mostly on real robots.</p>
+      <p style="margin-top:1.1rem">
+        <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" class="btn btn-ghost" target="_blank" rel="noopener">
+          <i class="fa-solid fa-graduation-cap"></i> Google Scholar ↗
+        </a>
+      </p>
+    </section>
 
-      <div class="pub-item">
-        <p><i>"Domain Translation of a Soft Robotic Arm using Conditional Cycle Generative Adversarial Network"</i>, <b>N. Kushawaha</b>, C. Alessi, 
-        L. Fruzetti, E. Falotico; <b><i>IEEE International Conference on Robotics Systems and Application 2025</i></b> — 
-        <a href="https://arxiv.org/abs/2508.14100">Paper link</a></p>
-        <img src="https://raw.githubusercontent.com/nilay121/nilay121.github.io/main/ccgan_paper.gif" alt="cycle_gan_paper">
-        <p>In this work, we developed a control algorithm based on a conditional cycle generative adversarial network to <i>transfer 
-          a pose controller</i> from a standard simulation environment to a domain with tenfold higher viscosity. The approach was 
-          evaluated in simulation on the I-Support soft robotic arm for trajectory tracking tasks.
-        </p>
-      </div>
+    <section id="publications" class="card reveal">
 
-      <div class="pub-item">
-        <p><i>"Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning"</i>, <b>N. Kushawaha</b>, R. Pathan,
-        N. Pagliarani, M. Cianchetti, E. Falotico; <b><i>IEEE Robosoft 2025 (Accepted)</i></b> — 
-        <a href="https://www.arxiv.org/abs/2503.16540">Paper link</a></p>
-        <img src="https://raw.githubusercontent.com/nilay121/nilay121.github.io/main/sensor_drift_paper.png" alt="sensor_drift">
-        <p>In this work, we developed an adaptive continual learning algorithm to model the <i>drift present in a soft finger with piezoelectric based sensor </i> embedded
-          inside it for proprioception. The algorithm models together the inherent drift present in the sensor as well as the non-linearity of the soft 
-        structures in an online manner.</p>
-      </div>
+      <h3 class="year-head">2025</h3>
 
-      <h3>2024</h3>
-      <div class="pub-item">
-        <p><i>"SynapNet: A Complementary Learning System Inspired Algorithm With Real-Time Application in Multimodal Perception"</i>, 
-        <b>N. Kushawaha</b>, L. Fruzzetti, E. Donato, E. Falotico; <b><i>IEEE Transactions on Neural Networks and Learning Systems</i></b> — 
-        <a href="https://ieeexplore.ieee.org/abstract/document/10649896">Paper link</a></p>
-        <img src="https://raw.githubusercontent.com/nilay121/nilay121.github.io/main/synapnet_paper_new.gif" alt="synapnet_algorithm">
-        <p>In this work, we developed an algorithm inspired by CLS theory, combining a <i>fast learner</i> with a <i>slow consolidator</i>, 
-          enhanced by a VAE-based pseudo-episodic memory. The approach integrates <i>lateral inhibition</i> to suppress redundant neuronal 
-          activity and employs a <i>sleep phase</i> to reorganize learned representations. We demonstrated its effectiveness in real-time 
-          object classification using proprioceptive signals from a soft sensorized gripper operating in a <i>dynamic environment</i> with 
+      <article class="pub-item">
+        <p class="pub-title">Continual Learning for Multimodal Data Fusion of a Soft Gripper</p>
+        <p class="pub-meta"><span class="me">N. Kushawaha</span>, E. Falotico</p>
+        <span class="venue">Advanced Robotics Research, Wiley</span>
+        <br>
+        <a class="paper-link" href="https://arxiv.org/abs/2409.13792" target="_blank" rel="noopener">Paper ↗</a>
+        <img src="multimodal_paper.png" alt="Multimodal data fusion results for a soft gripper" loading="lazy">
+        <p class="summary">We developed a continual learning framework for multimodal semi-supervised learning, allowing new sensing
+          modalities to be integrated incrementally without <i>retraining from scratch</i>. We demonstrated the approach on a soft
+          pneumatic gripper equipped with force, bend, and vision sensors, synchronized through ROS.</p>
+      </article>
+
+      <article class="pub-item">
+        <p class="pub-title">Domain Translation of a Soft Robotic Arm using Conditional Cycle Generative Adversarial Network</p>
+        <p class="pub-meta"><span class="me">N. Kushawaha</span>, C. Alessi, L. Fruzetti, E. Falotico</p>
+        <span class="venue">IEEE ICRSA 2025</span>
+        <br>
+        <a class="paper-link" href="https://arxiv.org/abs/2508.14100" target="_blank" rel="noopener">Paper ↗</a>
+        <img src="ccgan_paper.gif" alt="Conditional cycle GAN domain translation for a soft robotic arm" loading="lazy">
+        <p class="summary">We developed a control algorithm based on a conditional cycle generative adversarial network to
+          <i>transfer a pose controller</i> from a standard simulation environment to a domain with tenfold higher viscosity.
+          The approach was evaluated in simulation on the I-Support soft robotic arm for trajectory tracking tasks.</p>
+      </article>
+
+      <article class="pub-item">
+        <p class="pub-title">Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning</p>
+        <p class="pub-meta"><span class="me">N. Kushawaha</span>, R. Pathan, N. Pagliarani, M. Cianchetti, E. Falotico</p>
+        <span class="venue">IEEE RoboSoft 2025</span>
+        <br>
+        <a class="paper-link" href="https://www.arxiv.org/abs/2503.16540" target="_blank" rel="noopener">Paper ↗</a>
+        <img src="sensor_drift_paper.png" alt="Adaptive drift compensation for a soft sensorized finger" loading="lazy">
+        <p class="summary">We developed an adaptive continual learning algorithm to model the <i>drift present in a soft finger with an
+          embedded piezoelectric sensor</i> used for proprioception. The algorithm jointly models the sensor's inherent drift and
+          the non-linearity of the soft structure, online.</p>
+      </article>
+
+      <h3 class="year-head">2024</h3>
+
+      <article class="pub-item">
+        <p class="pub-title">SynapNet: A Complementary Learning System Inspired Algorithm With Real-Time Application in Multimodal Perception</p>
+        <p class="pub-meta"><span class="me">N. Kushawaha</span>, L. Fruzzetti, E. Donato, E. Falotico</p>
+        <span class="venue">IEEE Transactions on Neural Networks and Learning Systems</span>
+        <br>
+        <a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/10649896" target="_blank" rel="noopener">Paper ↗</a>
+        <img src="synapnet_paper_new.gif" alt="SynapNet algorithm overview" loading="lazy">
+        <p class="summary">We developed an algorithm inspired by CLS theory, combining a <i>fast learner</i> with a <i>slow consolidator</i>,
+          enhanced by a VAE-based pseudo-episodic memory. The approach integrates <i>lateral inhibition</i> to suppress redundant neuronal
+          activity and employs a <i>sleep phase</i> to reorganize learned representations. We demonstrated its effectiveness in real-time
+          object classification using proprioceptive signals from a soft sensorized gripper operating in a <i>dynamic environment</i> with
           an unknown number of classes.</p>
-      </div>
+      </article>
 
-      <h3>2022</h3>
-      <div class="pub-item">
-        <p><i>"Separation of electrons from pions in GEM TRD using deep learning"</i>, <b>N. Kushawaha</b>, Y Furletova, A Roy, D Romanov — 
-        <a href="https://arxiv.org/abs/2303.10776">Paper link</a></p>
-      </div>
+      <h3 class="year-head">2022</h3>
 
-      <div class="pub-item">
-        <p><i>"A study of Artificial Neural Network and its implementation from scratch"</i>, <b>N. Kushawaha</b>, A. Roy — 
-        <a href="https://www.researchsquare.com/article/rs-1588234/v1">Paper link</a></p>
-      </div>
+      <article class="pub-item">
+        <p class="pub-title">Separation of electrons from pions in GEM TRD using deep learning</p>
+        <p class="pub-meta"><span class="me">N. Kushawaha</span>, Y. Furletova, A. Roy, D. Romanov</p>
+        <a class="paper-link" href="https://arxiv.org/abs/2303.10776" target="_blank" rel="noopener">Paper ↗</a>
+      </article>
+
+      <article class="pub-item">
+        <p class="pub-title">A study of Artificial Neural Network and its implementation from scratch</p>
+        <p class="pub-meta"><span class="me">N. Kushawaha</span>, A. Roy</p>
+        <a class="paper-link" href="https://www.researchsquare.com/article/rs-1588234/v1" target="_blank" rel="noopener">Paper ↗</a>
+      </article>
 
     </section>
-  </div>
 
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Nilay Kushawaha — AI &amp; Robotics Researcher</span>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/nilaykush/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/nilay121?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=hNe2U7UAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="https://www.youtube.com/@nilaykushawaha3028" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js" defer></script>
 </body>
 </html>
-
-
